@@ -1,1 +1,1 @@
-Going from Packer To Lazy
+* AT this point everything is F***ed *

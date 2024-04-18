@@ -1,0 +1,500 @@
+vim
+clear
+ls -al
+clear
+ls -al
+sudo pacman -S ttf-terminus-nerd
+clear
+sudo pacman -S ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono ttf-jetbrains-mono-nerd
+fc-list | grep Jet
+fc-list | grep 'Jet Brains'
+fc-list | grep 'JetBrains'
+fc-list | grep 'JetBrainsMono'
+vim .config/foot/foot.ini 
+fc-list | grep 'JetBrainsMono Nerd'
+fc-list | grep 'JetBrainsMono Nerd Font Mono'
+vim .config/foot/foot.ini 
+clear
+exit
+bemenu-run --help
+htop
+fc-list | grep Terminess
+bemenu-run --list 20
+bemenu-run --list 20 --fn ('Terminess [100]')
+bemenu-run --list 20 --fn 'Terminess [100]'
+bemenu-run --list 20 --fn 'Terminess Nerd Font Mono [100]'
+sudo pacman -Ss Terminess
+sudo pacman -Ss terminess
+sudo pacman -Ss terminus-font
+sudo pacman -S terminus-font
+bemenu-run --list 20 --fn 'Terminess [100]'
+fc-list | grep Terminess
+bemenu-run --list 20 --fn 'TerminessNerdFontMono-Bold'
+fc-list | grep 'terminess
+'
+fc-list | grep 'terminess'
+fc-list | grep terminess
+fc-list | grep terminess
+fc-list | grep Terminess
+fc-list | grep 'Terminess Nerd Font'
+bemenu-run --list 20 --fn 'Terminess Nerd Font:style=Bold'
+echo -e "toto\ntiti" | bemenu -fn "monospace 10"
+echo -e "toto\ntiti" | bemenu -fn "monospace 1000"
+echo -e "toto\ntiti" | bemenu -fn "monospace 20"
+cd .config/
+ls
+mkdir fontconfig
+cd fontconfig/
+ls
+cd ..
+ls
+rm -rf fontconfig/
+ls
+cd
+sudo pacman -S bemenu
+clear
+bemenu-run --list 20 --fn 'Terminess Nerd Font:style=Bold [0.5]'
+bemenu-run --list 20 --fn 'Terminess Nerd Font:style=Bold [1]'
+bemenu-run --list 20 --fn 'Terminess Nerd Font:style=Bold [2]'
+bemenu-run --list 20 --fn 'Terminess Nerd Font:style=Bold [1]'
+bemenu-run --fn 'Terminess Nerd Font:style=Bold [1]'
+bemenu-run --fn 'Terminess Nerd Font:style=Bold [3]'
+clear
+ls -al
+clear
+clear
+ls -al
+clear
+clear
+exit
+lsblk
+pacman -S exfat-utils
+sudo pacman -S exfat-utils
+clear
+lsblk
+sudo mkfs.exfat /dev/sda 
+lsblk
+clear
+exit
+cd /run/media/baba/1852-A82B/
+ls
+ls -al
+clear
+exit
+ls
+cd .nv
+cd .config/nvim/
+ls
+vim init.lua 
+cd ..
+sl
+ls
+cd -r nvim ~/Downloads/
+cp -r nvim ~/Downloads/
+cd nvim/
+ls
+cd init.lua 
+vim init.lua 
+rm -rf after/
+vim init.lua 
+vim init.lua 
+ls
+cd plugin/
+ls
+vim packer_compiled.lua 
+cd ..
+rm plugin/
+rm -rf plugin/
+ls
+clear
+vim init.lua 
+ls
+rm ~/.local/share/nvim/site/pack/packer/start/
+rm -rf ~/.local/share/nvim/
+rm -rf ~/.local/share/nvim/
+rm -rf ~/.local/share/nvim/
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/share/nvim
+cd ~/.local/share/
+ls
+ls -al
+cd
+cd .config/
+ls
+cd nvim/
+ls
+ls -al
+clear
+vim README.md 
+ls -al
+clear
+ls
+nvim README.md 
+git status
+git add .
+git status
+vim init.lua 
+ls
+clear
+ls -al
+git commit -m "Packer to LAZY"
+git push origin main
+git status
+clear
+ls -al
+sudo pacman -S emacs
+sudo pacman -Ss emacs
+df
+clear
+df
+man df
+df --help
+df -h
+df -h
+sudo pacman -S gnome-disk-utility
+gnome-disks
+gnome-disks
+gnome-disks
+clear
+exit
+sudo pacman -S emacs-wayland
+sudo pacman -S pipewire xdg-desktop-portal xdg-desktop-portal-wlr
+clear
+sudo pacman -Syu
+cd Downloads/dwl/
+vim config.h 
+cd
+vim dwl-start
+ls
+rm dwl-start
+chmod +x dwl-start.sh 
+ls
+vim dwl-start.sh 
+vim dwl-start.sh 
+man dwl
+dwl --help
+dwlb
+dwlb
+vim dwl-start.sh 
+clear
+ls -al
+ps -ef | grep dbus | grep -v grep
+netstat -an | grep @/tmp/dbus- | awk '{ print $NF }' | sort | uniq
+sudo pacman -Ss netstat
+sudo pacman -Ss netstat-nat
+sudo pacman -S netstat-nat
+netstat -an | grep @/tmp/dbus- | awk '{ print $NF }' | sort | uniq
+sudo pacman -R netstat-nat
+sudo pacman -S net-tools
+netstat -an | grep @/tmp/dbus- | awk '{ print $NF }' | sort | uniq
+netstat -an | grep @/tmp/dbus- | awk '{ print $NF }' | sort | uniq
+netstat -an | grep @/tmp/dbus- | awk '{ print $NF }' | sort | uniq
+netstat -an | grep @/tmp/dbus- | awk '{ print $NF }' | sort | uniq
+netstat -an | grep @/tmp/dbus- | awk '{ print $NF }' | sort | uniq
+exit
+netstat -an | grep @/tmp/dbus- | awk '{ print $NF }' | sort | uniq
+netstat -an | grep @/tmp/dbus- | awk '{ print $NF }' | sort | uniq
+sudo pacman -R net-tools
+ps -ef | grep dbus | grep -v grep
+echo $XDG_SESSION_TYPE
+sudo pacman -S qt5-wayland qt5ct
+sudo pacman -Syu
+clear
+ls -al
+vim .bash_profile 
+echo $QT_QPA_PLATFORM
+vim .bash_profile 
+echo $XDG_CURRENT_DESKTOP
+echo $XDG_SESSION_DESKTOP
+vim .bash_profile 
+dwl
+clear
+./dwl-start.sh 
+clear
+./dwl-start.sh 
+exec ./dwl-start.sh 
+ls -al
+exec ./dwl-start.sh 
+cat .bash_profile 
+echo QT_QPA_PLATFORM
+echo $QT_QPA_PLATFORM
+echo $QT_QPA_PLATFORMTHEME 
+clear
+ls
+vim dwl-start.sh 
+ls -al
+clear
+ls
+vim .bash_profile 
+exit
+pwd
+ls -al
+exit
+ls -al
+vim .bash_profile 
+ls
+mkdir scripts
+ls
+mv dwl-start.sh scripts/
+vim .bash_profile 
+clear
+cat .bash_history | grep dbus
+ps -ef | grep dbus | grep -v grep
+ps -ef | grep dbus 
+ps -ef | grep dwl
+clear
+exit
+sudo shutdown now
+ls -al
+clear
+exit
+ls -al
+ls -al
+ls 
+vim scripts/dwl-start.sh 
+vim scripts/dwl-start.sh 
+exit
+sudo pacman -Ss emacs
+exit
+ls -al
+clear
+nmtui
+clear
+exit
+nmtui
+nmtui
+ip -c a
+clear
+exit
+sudo pacman -S libva-mesa-driver
+sudo pacman -Syu
+clear
+ping google.com
+yay obs-studio-amf
+yay -Sc --aur
+clear
+exit
+nmtui
+ip -c a
+clear
+exit
+nmtui
+nmtui
+clear
+exit
+sendiso 
+sensors
+clear
+exit
+nmtui
+yay obs-studio-amf
+yay -S obs-studio-amf
+cat /sys/class/power_supply/BAT0/capacity
+yay -Scc
+yay -Syu
+yay -Syu
+sudo pacman -Syu
+clear
+sudo pacman -S mesa
+clear
+sudo pacman -S libpng12 lib32-libpng12 ocl-icd openssl-1.0 opencl-driver qt5-websockets
+sudo pacman -S libpng12 lib32-libpng12 ocl-icd openssl-1.0 opencl-driver qt5-websockets
+sudo pacman -S libpng12 lib32-libpng12 ocl-icd openssl opencl-driver qt5-websockets
+yay -S amdgpu-pro-libgl opencl-amd
+yay -Syu
+pacman -Syu
+yay -Syu
+yay -R opencl-amd
+yay -Syu
+yay -R opencl-amd-debug
+yay -Syu
+yay -Scc
+clear
+exit
+sudo obs
+obs
+clear
+exit
+echo $QT_QPA_PLATFORM
+exit
+QT_QPA_PLATFORM=xcb obs 
+echo $QT_QPA_PLATFORM
+exit
+sudo pacman -S obs-studio
+sudo pacman -Ss kdenlive
+sudo pacman -S kdenlive
+sudo pacman -S kdenlive
+sudo pacman -S kdenlive
+clear
+sudo pacman -S gimp
+exit
+sudo pacman -S pipewire-v412
+sudo pacman -S pipewire-v412
+sudo pacman -S pipewire-v412
+sudo pacman -Ss pipewire-v412
+sudo pacman -Ss pipewire
+sudo pacman -Ss pipewire | grep v412
+sudo pacman -Ss pipewire | grep v
+sudo pacman -Syu
+yay -Syu
+sudo pacman -Ss pipewire-v4l2
+sudo pacman -S pipewire-v4l2 lib32-pipewire-v4l2
+reboot
+sudo pacman -S qt5-wayland
+sudo pacman -S xdg-desktop-portal
+sudo pacman -S xdg-desktop-portal-wayland
+sudo pacman -S xdg-desktop-portal-wlr
+clear
+vim .bash_profile 
+exit
+sudo pacman -R obs-studio
+sudo pacman -R $(pacman -Qtdq)
+clear
+clear
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+clear
+yay -Syu
+yay -Scc
+clear
+yay -Syu
+clear
+exit
+sudo pacman -R gimp kdenlive
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+sudo pacman -R $(pacman -Qtdq)
+yay -Scc
+yay -Syu
+clear
+exit
+gimp
+gimp
+echo $GDK_BACKEND
+echo $DISPLAY
+echo $DISPLAY
+shutdown now
+vim .bash_profile 
+ls -al
+vim .gitconfig 
+vim .bash_profile 
+echo $DISPLAY
+vim .bash_profile 
+exit
+whereis dwl
+exit
+yay -R keyd
+yay -R keyd-git
+sudo systemctl status keyd
+sudo systemctl disable keyd
+sudo systemctl status keyd
+clear
+exit
+cat .bash_history | grep dbus
+ps -ef | grep dbus | grep -v grep
+clear
+nmtui
+clear
+vim .bash_history
+reboot
+sudo systemctl status keyd
+sudo systemctl status keyd
+sudo systemctl disable keyd
+sudo systemctl enable keyd
+clear
+exit
+nmtui
+nmtui
+vim .bash_history
+clear
+vim Downloads/dwl/config.h 
+sudo make clean install
+sudo make clean install
+cd Downloads/dwl/
+sudo make clean install
+nmtui
+cd Downloads/dwl/
+ls
+vim config.h 
+sudo make clean install
+vim config.h 
+vim Downloads/dwl/config.h 
+sudo make clean install
+cd Downloads/dwl/
+sudo make clean install
+vim config.h 
+sudo make clean install
+clear
+cd Downloads/dwl/
+vim config.h 
+sudo make clean install
+clear
+ls -al
+clear
+clear
+exit
+nmtui
+nmtui
+nmtui
+clear
+sudo pacman -Syu
+yay -syu
+yay -Syu
+ls -al
+git clone git@github.com:dixitbhuva/emacs-configuration.git .emacs.d/
+cd .emacs.d/
+ls
+clear
+exit
+fc-cache -Ev
+fc-cache -v
+clear
+exit
+killall emacs
+exit
+vim
+vim .config/nvim/
+vim .config/nvim/
+vim Downloads/nvim/after/plugin/colors.lua 
+vim .config/nvim/init.lua 
+vim .config/nvim/init.lua 
+vim .config/nvim/init.lua 
+vim .config/nvim/init.lua 
+clear
+vim .config/nvim/init.lua 
+vim .config/nvim/init.lua 
+vim .config/nvim/init.lua 
+clear
+vim .config/nvim/init.lua 
+clear
+exit
+nmtui
+nmtui
+sudo pacman -S pipewire xdg-desktop-portal xdg-desktop-portal-wlr
+clear
+reboot
+fc-list | grep Jet
+fc-list | grep 'Jet Brains'
+fc-list | grep 'JetBrainsMono'
+fc-list | grep 'JetBrainsMono Nerd'
+fc-list | grep 'JetBrainsMono Nerd Font Mono'
+cat scripts/dwl-start.sh 
+nmtui
+clear
+htop
+clear
