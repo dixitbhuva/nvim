@@ -1,3 +1,0 @@
-#!/bin/sh
-#start dwl with dbus
-exec dbus-launch --exit-with-session dwl #-s 'dwlb -font "monospace:size=16"'  

@@ -1,5 +1,0 @@
-ls -v | cat -n | while read n f; do mv -n "$f" "$n.ext"; done  for rename secquence
-
-wbg $(find /home/baba/wallpaper -type f | shuf -n 1)  random picks
-
-sudo -E input-remapper-gtk
