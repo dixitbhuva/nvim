@@ -32,7 +32,7 @@ return {
         colors.fg_sidebar = fg_dark
       end,
     })
--- load the colorscheme here
+    -- load the colorscheme here
     vim.cmd([[colorscheme tokyonight]])
   end
 }
