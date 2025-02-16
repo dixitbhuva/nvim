@@ -34,8 +34,6 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
------ BASIC OPTIONS -----
 vim.opt.updatetime = 50
 vim.opt.guicursor = ""
 vim.opt.wrap = false
@@ -86,19 +84,36 @@ require("lazy").setup({
   spec = {
     -- add your plugins here
     --------------------------------------------------------------------------------
-    --------------------------------------------------------------------------------
     { 
-      'metalelf0/base16-black-metal-scheme',
+      "ellisonleao/gruvbox.nvim",
       lazy = false,
       priority = 1000,
       config = function()
-        vim.cmd([[colorscheme base16-black-metal-immortal]])
+        vim.opt.background = "dark"
+        vim.cmd([[colorscheme gruvbox]])
       end,
     },
 
     { 
       'nvim-tree/nvim-web-devicons', 
       enabled = vim.g.have_nerd_font
+    },
+
+    {
+      'nvim-lualine/lualine.nvim',
+      dependencies = { 
+        'nvim-tree/nvim-web-devicons'
+      },
+      config = function()
+        require('lualine').setup {
+          options = {
+            icons_enabled = true,
+            theme = 'gruvbox',
+            component_separators = { left = '', right = ''},
+            section_separators = { left = '', right = ''},
+          }
+        }
+      end,
     },
 
     {
@@ -122,100 +137,6 @@ require("lazy").setup({
         })
       end,
     },
-
-    {
-      "williamboman/mason.nvim",
-      config = function()
-        require("mason").setup({
-          ui = {
-            icons = {
-              package_installed = "✓",
-              package_pending = "➜",
-              package_uninstalled = "✗"
-            }
-          }
-        })
-      end,
-    },
-
-    {
-      "williamboman/mason-lspconfig.nvim",
-      config = function()
-        require("mason-lspconfig").setup {
-          ensure_installed = { "lua_ls", "intelephense" },
-        }
-      end,
-    },
-
-    {
-      'saghen/blink.cmp',
-      dependencies = 'rafamadriz/friendly-snippets',
-      version = '*',
-      opts = {
-        keymap = { preset = 'default' },
-        appearance = {
-          use_nvim_cmp_as_default = true,
-          nerd_font_variant = 'mono'
-        },
-        signature = { enabled = true },
-      }
-    },
-
-    {
-      'neovim/nvim-lspconfig',
-      dependencies = { 'saghen/blink.cmp' },
-      -- example using `opts` for defining servers
-      opts = {
-        servers = {
-          lua_ls = {},
-          intelephense = {}
-        }
-      },
-      config = function(_, opts)
-        local lspconfig = require('lspconfig')
-        local cmp_capabilities = require("cmp_nvim_lsp").default_capabilities()
-        for server, config in pairs(opts.servers) do
-          -- passing config.capabilities to blink.cmp merges with the capabilities in your
-          -- `opts[server].capabilities, if you've defined it
-          config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
-          config.capabilities = cmp_capabilities
-          lspconfig[server].setup(config)
-        end
-      end
-    },
-
-    {
-      "hrsh7th/nvim-cmp",
-      dependencies = {
-        "hrsh7th/cmp-nvim-lsp",
-        "hrsh7th/cmp-buffer",
-        "hrsh7th/cmp-path",
-        "hrsh7th/cmp-cmdline",
-        "L3MON4D3/LuaSnip",
-        "saadparwaiz1/cmp_luasnip"
-      },
-      config = function()
-        local cmp = require("cmp")
-        cmp.setup({
-          snippet = {
-            expand = function(args)
-              require("luasnip").lsp_expand(args.body)
-            end,
-          },
-          mapping = cmp.mapping.preset.insert({
-            ["<C-Space>"] = cmp.mapping.complete(),
-            ["<CR>"] = cmp.mapping.confirm({ select = true }),
-          }),
-          sources = cmp.config.sources({
-            { name = "nvim_lsp" },
-            { name = "buffer" },
-            { name = "path" },
-          }),
-        })
-      end,
-    },
-
-    --------------------------------------------------------------------------------
     --------------------------------------------------------------------------------
   },
   -- Configure any other settings here. See the documentation for more details.
@@ -224,3 +145,4 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
+
